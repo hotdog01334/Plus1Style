@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang = en>
+
+<head>
+    <meta charset="UTF-8">
+<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+<title> Testing</title>
+<link rel="stylesheet" href="style.css">
+<script src="index.js" defer> </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: rgb(120, 255, 226);">
+
+<section id="header">
+
+
+<div>
+<ul id="navbar">
+ <li> <a href="index.html"> Home</a></li>
+ <li> <a href="merch.html"> Merch</a></li>
+ <li> <a href="cosplay.html"> Cosplay</a></li>
+ <li> <a href="order.html"> Order</a></li>
+ <li> <a href="team.html"> Crew</a></li>
+ <li> <a class="active" href="faq.html"> FAQ</a></li>
+</ul>
+</div>
+
+<div id ="mobile">
+<i id="bar" class="fas fa-outdent"></i>
+
+
+
+</div>
+</section>
+<section id="rest">
+<h2>FAQ</h2>
+
+<p>How did +1 style get its name?:</p>
+<button type="button" class="collapsible">Answer</button>
+<div class="content">
+  <p> Siddarth came up with it due to it being a reference to when you level up and get a +1 to a stat in video-games, but since the brand is about fashion as well, style was the perfect stat to describe it</p>
+</div>
+
+<p> Why are there only 9 shirts?:</p>
+<button type="button" class="collapsible">Answer</button>
+<div class="content">
+  <p> There are only 9 shirts due to us being a new business and trying to work with the funds we have</p>
+</div>
+<p>Why both merch and cosplay?</p>
+<button type="button" class="collapsible">Answer</button>
+<div class="content">
+  <p> We want to attract non-gamers, and non-cosplayers that are still gamers as well, which is why we also chose to do merch</p>
+</div>
+
+  <p> Are you officially collabed with the brands of the merch you have?</p>
+<button type="button" class="collapsible">Answer</button>
+<div class="content">
+  <p> IPBA answer: Yes, we have collaborated with the owners to make merch out of their brands/ips. Real-life answer: No</p>
+</div>
+  <p> Did you actually make the outfits shown in the cosplay tab?</p>
+<button type="button" class="collapsible">Answer</button>
+<div class="content">
+  <p> IPBA answer: Yes, we have made these outfits out of quality material and made sure we put our time and effort into them. Real-life answer: No, go support the original creators because they put a lot of hard work into making those costumes</p>
+</div>
+
+<script>var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}</script>
+</section>
+</body>
+
+</html>

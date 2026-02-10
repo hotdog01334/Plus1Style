@@ -1,0 +1,481 @@
+@import url ('https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+#header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 80px;
+background: #cadaf2;
+box-shadow: 0 5px 15px rgba (0, 0, 0, 0.06);
+z-index: 999;
+position: sticky;
+top: 0;
+left: 0;
+}
+#navbar {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#navbar li { 
+list-style: none;
+padding: 0 20px;
+
+
+}
+#navbar li a {
+text-decoration: none;
+font-size: 16px;
+font-weight: 600;
+color:black;
+transition: 0.3s ease;
+
+
+}
+
+
+#navbar li a:hover,
+#navbar li a.active {
+color:blue;
+background-color: #cadaf2;
+
+}
+
+#mobile {
+display: none;
+align-items: center;
+}
+
+.logo
+{
+width: 75px;
+height: 75px
+
+}
+
+#hero {
+background-size:cover;
+background-image: url("images/Background.png");
+height: 90vh;
+width: 100%;
+background-position: top 50% right 0%;
+padding: 0 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+}
+
+#hero2 {
+background-size:cover;
+background-image: url("images/order.png");
+height: 90vh;
+width: 100%;
+background-position: top 50% right 0%;
+padding: 0 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+}
+
+@media (max-width: 799px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    height: 100vh;
+    width: 300px;
+    background-color: #cadaf2;
+    box-shadow: 0 40px 60px, black;
+    padding: 80px 0 0 10px;
+  }
+  #navbar li {
+   margin-bottom: 25px;
+
+
+  }
+#mobile {
+display: none;
+align-items: center;
+}
+}
+
+img {
+width: 100px;
+width: 100%;
+height: 280px;
+position: relative;
+}
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  
+}
+
+.slideshow-container2 {
+  max-width: 500px;
+  position: relative;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 25px;
+  
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgba(255, 255, 255, 0.735);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+
+  color: black;
+}
+
+#merch1 {
+text-align: center;
+padding-top: 10px;
+text-decoration: solid;
+
+
+}
+
+#merch11 {
+text-align: center;
+padding-top: 10px;
+text-decoration: solid;
+margin-left: 142px;
+margin-top: 1px;
+margin-bottom: 145px;
+}
+
+#merch { 
+background-image: url("images/test6.png");
+padding: 0 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+border:  darkgreen 5px groove;
+height: 400px;
+}
+
+.carousel-content  h3{
+
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(193, 12, 12, 0.6);
+}
+
+h3 {
+
+  text-align: center;
+  
+}
+
+#merch2 {
+text-align: center;
+padding-top: 5px;
+size: 90%;
+padding-bottom: 13px;
+}
+
+#Merch {
+background-color: whitesmoke;
+
+
+}
+
+#Merch2 {
+background-image: url("images/Terraria.png");
+  padding: 0 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+border:  rgb(4, 71, 4) 5px groove;
+height: 400px;
+
+
+}
+
+#Merch3 {
+
+background-image: url("images/Style.png");
+  padding: 0 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+border:  rgb(12, 65, 145) 5px groove;
+height: 400px;
+
+}
+
+#special
+
+{
+Width: 500px;
+height: 450px;
+border:  black 3.5px groove;
+}
+
+#special2
+
+{
+Width: 510px;
+height: 650px;
+border:  black 3.5px groove;
+}
+
+#costume
+
+{
+  
+  background-image: url("images/cosplay.png");
+  height: 140vh;
+width: 100%;
+background-position: top 50% right 0%;
+padding: 0 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+}
+
+#price
+{
+  font-size: 150%;
+  
+}
+
+#hamburger {
+background-image: url("images/team.png");
+height: 140vh;
+width: 100%;
+background-position: top 50% right 0%;
+padding: 0 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+
+}
+
+#price2 {
+
+  font-size: 150%;
+  background-color: rgb(233, 34, 34);
+
+
+}
+
+#price3 {
+ font-size: 150%;
+  background-color: rgb(34, 233, 37);
+}
+
+#price5 {
+ font-size: 150%;
+  background-color: rgb(233, 177, 34);
+
+}
+
+#price4 {
+ font-size: 150%;
+  background-color: rgb(34, 144, 233);
+}
+
+#price6 {
+
+   font-size: 150%;
+  background-color: rgb(197, 233, 34);
+}
+h4 {
+margin-top: 4.5px;
+font-size: 110%;
+}
+
+#juice { margin-top: 4.5px;
+font-size: 150%;
+
+}
+
+#bye {
+margin-bottom: 17px;
+text-align: center;
+text-wrap: inherit;
+margin-top: 5px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dbedff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d6a8f5; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9e78b8; 
+  transition: 1s ease;
+}
+
+#cookie{
+  
+  font-size: 200%;
+  max-width: 520px;
+}
+
+#cookie2{
+  
+  font-size: 145%;
+  max-width: 530px;
+  margin-top: 6px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+}
+
+#cookie3{
+  
+  font-size: 200%;
+  max-width: 520px;
+  margin-top: 8px;
+}
+
+#hero3 {
+
+background-size:cover;
+background-image: url("images/pay.png");
+height: 90vh;
+width: 100%;
+background-position: top 50% right 0%;
+padding: 0 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+margin-top: 25px;
+
+
+}
+
+  .collapsible {background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+#rest {
+  
+}
+
+#merch10{
+  text-align: center;
+padding-top: 10px;
+text-decoration: solid;
+font-size: 170%;
+}
+
+#special3 {
+Width: 500px;
+height: 460px;
+border:  5px groove;
+border-image: url(images/purp.png) 30 round;
+
+}
+
+#special4 {
+Width: 480px;
+height: 470px;
+border:  5px groove;
+border-image: url(images/purp.png) 30 round;
+
+}
+
+#special3 {
+Width: 500px;
+height: 460px;
+border:  5px groove;
+border-image: url(images/purp.png) 30 round;
+
+}
+
+
+#specials {
+Width: 490px;
+height: 450px;
+border:   5px groove;
+
+border-image: url(images/purp.png) 30 round;
+
+
+
+}
+
+
+
+#special5 {
+Width: 453px;
+height: 490px;
+border:   5px groove;
+
+border-image: url(images/purp.png) 30 round;
+
+
+
+}
