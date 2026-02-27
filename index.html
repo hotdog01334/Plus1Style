@@ -1,34 +1,61 @@
-let slideIndex = [1,1,2];
-let slideId = ["mySlides1", "mySlides2", "mySlides3"]
-// add 1 to the right each time you add a new one
-showSlides(1, 0);
-showSlides(1, 1);
-showSlides(1, 2);
+<!DOCTYPE html>
+<html lang = en>
 
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
-}
+<head>
+    <meta charset="UTF-8">
+<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+<title> +1style</title>
+<link rel="stylesheet" href="style.css">
+<script src="index.js" defer> </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
 
-function showSlides(n, no) {
-  let i;
-  let x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}    
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex[no]-1].style.display = "block";  
-}
+<body>
+<section id="header">
 
 
-//faq toggle stuff 
-$('.togglefaq').click(function(e) {
-e.preventDefault();
-var notthis = $('.active').not(this);
-notthis.find('.icon-minus').addClass('icon-plus').removeClass('icon-minus');
-notthis.toggleClass('active').next('.faqanswer').slideToggle(300);
- $(this).toggleClass('active').next().slideToggle("fast");
-$(this).children('i').toggleClass('icon-plus icon-minus');
-});
+<div>
+<ul id="navbar">
+ <li> <a class="active" href= "index.html"> Home</a></li>
+ <li> <a href="merch.html"> Merch</a></li>
+ <li> <a href="cosplay.html"> Cosplay</a></li>
+ <li> <a href="order.html"> Order</a></li>
+ <li> <a href="team.html"> Crew</a></li>
+ <li> <a href="faq.html"> FAQ</a></li>
+</ul>
+</div>
+
+<div id ="mobile">
+<i id="bar" class="fas fa-outdent"></i>
 
 
+</div>
+
+</section>
+
+<section id="hero">
+    <div class="h">
+<h1> Merch? Cosplay? We got you</h1>
+<h2> For gamers, by gamers</h2>
+</div>
+<video  width="370" height="310" controls>
+ <source src="images/intro.mp4" type="video/mp4">
+</video>
+<div class="j">
+<h2 style="color: red;"> <br>NEW  VIDEO RELEASED CHECK IT OUT!!</h2>
+</div>
+<video  width="370" height="310" controls>
+    <source src="images/commercial.mp4" type="video/mp4">
+</video>
+</section>
+
+
+
+
+</body>
+
+</html>
