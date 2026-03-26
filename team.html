@@ -1,88 +1,529 @@
-<!DOCTYPE html>
-<html lang = en>
+@import url ('https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+ font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
 
-<head>
-    <meta charset="UTF-8">
-<meta name ="viewport" content="width=device-width, initial-scale=1.0">
-<title> +1style</title>
-<link rel="stylesheet" href="style.css">
-<script src="index.js" defer> </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+}
 
-<body>
-<section id="header">
+.j {
+  font-size: larger;
+}
 
+.h {
+  font-size: larger;
+  padding-top: 13px;
+}
 
-<div>
-<ul id="navbar">
- <li> <a href="index.html"> Home</a></li>
- <li> <a href="merch.html"> Merch</a></li>
-  <li> <a href="cosplay.html"> Cosplay</a></li>
- <li> <a href="order.html"> Order</a></li>
- <li> <a class="active" a href="team.html"> Crew</a></li>
- <li> <a href="faq.html"> FAQ</a></li>
-</ul>
-</div>
+#header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 80px;
+background: #cadaf2;
+box-shadow: 0 5px 15px rgba (0, 0, 0, 0.06);
+z-index: 999;
+position: sticky;
+top: 0;
+left: 0;
+}
+#navbar {
+display: flex;
+align-items: center;
+justify-content: center;
+}
 
-<div id ="mobile">
-<i id="bar" class="fas fa-outdent"></i>
-
-
-</div>
-</section>
-
-
-
-<section id="hamburger">
-<h1 id="merch11"> +1 style couldnt have been brought to you without these guys</h1>
-<div class="slideshow-container2" id="greg">
-
-  <div class="mySlides1">
-    <img id="specials" src="images/me2.webp">
-    <h3 id="price2">
-    Siddarth Alfonso Castro - CEO</h3>
-    <h4 id="juice"> Founded the company with his 4 friends back in 2025</h4>
-  </div>          
-
-  <div class="mySlides1">
-    <img id="special5" src="images/justin.jpeg">
-    <h3 id="price3"> Justin Dale Limet - QA Manager</h3>
-    <h4 id="juice"> He makes sure that all forms of apparel meet customer standard</h4>
-    </div>
-
-  <div class="mySlides1">
-    <img id="specials" src="images/nigs.jpg">
-     <h3 id="price4"> Ynigo Borja - Head of Marketing
-     </h3>
-     <h4 id = "juice"> Runs every ad, knows every strat </h4>
-     </div>
-
-     <div class="mySlides1">
-    <img id="special3" src="images/jamesd.jpeg">
-     <h3 id="price5"> James Carlos Dimailig - Community Manager </h3>
-     <h4 id="juice"> Theres no one in the team thats more of a gamer than him</h4>
-     </div>
-
-     </h3>
-     <div class="mySlides1">
-    <img id="special4" src="images/jamesz2.png">
-     <h3 id="price6">  James Gion Zamora - Social Media Manager
-     </h3>
-     <h4 id="juice"> He manages all our socials, including our YouTube channel</h4>
-</div>
-
-     <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-  </div>
-
-</section>
-
-</body>
+#navbar li { 
+list-style: none;
+padding: 0 20px;
 
 
+}
+#navbar li a {
+text-decoration: none;
+font-size: 16px;
+font-weight: 600;
+color:black;
+transition: 0.3s ease;
 
-</html>
+
+}
+
+
+#navbar li a:hover,
+#navbar li a.active {
+color:blue;
+background-color: #cadaf2;
+
+}
+
+#mobile {
+display: none;
+align-items: center;
+}
+
+.logo
+{
+width: 75px;
+height: 75px
+
+}
+
+#hero {
+background-size:cover;
+background-image: url("images/newbg2.png");
+height: 96vh;
+width: 100%;
+background-position: top 50% right 0%;
+padding: 0 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+}
+
+#hero2 {
+background-size:cover;
+background-image: url("images/order.png");
+height: 90vh;
+width: 100%;
+background-position: top 50% right 0%;
+padding: 0 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+}
+
+@media (max-width: 799px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    height: 100vh;
+    width: 300px;
+    background-color: #cadaf2;
+    box-shadow: 0 40px 60px, black;
+    padding: 80px 0 0 10px;
+  }
+  #navbar li {
+   margin-bottom: 25px;
+
+
+  }
+#mobile {
+display: none;
+align-items: center;
+}
+}
+
+img {
+width: 100px;
+width: 100%;
+height: 280px;
+position: relative;
+}
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  
+}
+
+.slideshow-container2 {
+  max-width: 500px;
+  position: relative;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 25px;
+  
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgba(255, 255, 255, 0.735);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+
+  color: black;
+}
+
+#merch1 {
+text-align: center;
+padding-top: 10px;
+text-decoration: solid;
+
+
+}
+
+.merch11 {
+text-align: center;
+padding-top: 10px;
+text-decoration: solid;
+margin-left: 142px;
+margin-top: 1px;
+margin-bottom: 145px;
+}
+
+.merch11 {
+text-align: center;
+padding-top: 10px;
+text-decoration: solid;
+margin-left: auto;
+margin-right: auto;
+margin-top: 1px;
+margin-bottom: 145px;
+}
+
+#merch { 
+background-image: url("images/test6.png");
+padding: 0 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+border:  darkgreen 5px groove;
+height: 400px;
+}
+
+.carousel-content  h3{
+
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(193, 12, 12, 0.6);
+}
+
+h3 {
+
+  text-align: center;
+  
+}
+
+ {
+
+}
+#merch2 {
+text-align: center;
+padding-top: 5px;
+size: 90%;
+padding-bottom: 13px;
+}
+
+#Merch {
+background-color: whitesmoke;
+
+
+}
+
+#Merch2 {
+background-image: url("images/Terraria.png");
+  padding: 0 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+border:  rgb(4, 71, 4) 5px groove;
+height: 400px;
+
+
+}
+
+#Merch3 {
+
+background-image: url("images/Style.png");
+  padding: 0 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+border:  rgb(12, 65, 145) 5px groove;
+height: 400px;
+
+}
+
+#special
+
+{
+Width: 500px;
+height: 450px;
+border:  black 3.5px groove;
+}
+
+#special2
+
+{
+Width: 510px;
+height: 650px;
+border:  black 3.5px groove;
+}
+
+#costume
+
+{
+  
+  background-image: url("images/cosplay10.png");
+  height: 140vh;
+width: 100%;
+background-position: top 50% right 0%;
+padding: 0 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+}
+
+#price
+{
+  font-size: 150%;
+ 
+}
+
+.hamburger {
+background-image: url("images/team.png");
+height: 140vh;
+width: 100%;
+background-position: top 50% right 0%;
+padding: 0 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+
+}
+
+.hamburger2 {
+background-image: url("images/inverted.png");
+height: 140vh;
+width: 100%;
+background-position: top 50% right 0%;
+padding: 0 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+text-align: center;
+}
+
+#price2 {
+
+  font-size: 150%;
+  background-color: rgb(233, 34, 34);
+
+
+}
+
+#price3 {
+ font-size: 150%;
+  background-color: rgb(34, 233, 37);
+}
+
+#price5 {
+ font-size: 150%;
+  background-color: rgb(233, 177, 34);
+
+}
+
+#price4 {
+ font-size: 150%;
+  background-color: rgb(34, 144, 233);
+}
+
+#price6 {
+
+   font-size: 150%;
+  background-color: rgb(197, 233, 34);
+}
+#price9 {
+
+   font-size: 150%;
+   background-color:#a7b4c8;
+}
+h4 {
+margin-top: 4.5px;
+font-size: 110%;
+}
+
+#juice { margin-top: 4.5px;
+font-size: 150%;
+
+}
+
+#bye {
+margin-bottom: 17px;
+text-align: center;
+text-wrap: inherit;
+margin-top: 5px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dbedff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d6a8f5; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9e78b8; 
+  transition: 1s ease;
+}
+
+#cookie{
+  
+  font-size: 200%;
+  max-width: 520px;
+}
+
+#cookie2{
+  
+  font-size: 145%;
+  max-width: 530px;
+  margin-top: 6px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+}
+
+#cookie3{
+  
+  font-size: 200%;
+  max-width: 520px;
+  margin-top: 8px;
+}
+
+#hero3 {
+
+background-size:cover;
+background-image: url("images/pay.png");
+height: 90vh;
+width: 100%;
+background-position: top 50% right 0%;
+padding: 0 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+margin-top: 25px;
+
+
+}
+
+  .collapsible {background-color: #8f97d3;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: rgb(126, 134, 194);
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+#rest {
+  
+}
+
+
+
+#merch10{
+  text-align: center;
+padding-top: 10px;
+text-decoration: solid;
+font-size: 170%;
+background-color: #a6b4e8;
+}
+
+#special3 {
+Width: 500px;
+height: 460px;
+border:  5px groove;
+border-image: url(images/purp.png) 30 round;
+
+}
+
+#special4 {
+Width: 480px;
+height: 470px;
+border:  5px groove;
+border-image: url(images/purp.png) 30 round;
+
+}
+
+#special3 {
+Width: 500px;
+height: 460px;
+border:  5px groove;
+border-image: url(images/purp.png) 30 round;
+
+}
+
+
+#specials {
+Width: 490px;
+height: 450px;
+border:   5px groove;
+
+border-image: url(images/purp.png) 30 round;
+
+
+
+}
+
+
+
+#special5 {
+<<<<<<< HEAD
+Width: 504px;
+height: 493px;
+=======
+Width: 490px;
+height: 500px;
+>>>>>>> 8c69c34504fe1c7a6c653b584146357c7165cabf
+border:   5px groove;
+
+border-image: url(images/purp.png) 30 round;
+
+
+
+}
