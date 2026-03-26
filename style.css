@@ -180,11 +180,21 @@ text-decoration: solid;
 
 }
 
-#merch11 {
+.merch11 {
 text-align: center;
 padding-top: 10px;
 text-decoration: solid;
 margin-left: 142px;
+margin-top: 1px;
+margin-bottom: 145px;
+}
+
+.merch11 {
+text-align: center;
+padding-top: 10px;
+text-decoration: solid;
+margin-left: auto;
+margin-right: auto;
 margin-top: 1px;
 margin-bottom: 145px;
 }
@@ -288,10 +298,10 @@ justify-content: center;
 #price
 {
   font-size: 150%;
-  
+ 
 }
 
-#hamburger {
+.hamburger {
 background-image: url("images/team.png");
 height: 140vh;
 width: 100%;
@@ -302,6 +312,19 @@ flex-direction: column;
 align-items: flex-start;
 justify-content: center;
 
+}
+
+.hamburger2 {
+background-image: url("images/inverted.png");
+height: 140vh;
+width: 100%;
+background-position: top 50% right 0%;
+padding: 0 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+text-align: center;
 }
 
 #price2 {
@@ -332,6 +355,11 @@ justify-content: center;
 
    font-size: 150%;
   background-color: rgb(197, 233, 34);
+}
+#price9 {
+
+   font-size: 150%;
+   background-color:#a7b4c8;
 }
 h4 {
 margin-top: 4.5px;
@@ -436,6 +464,8 @@ margin-top: 25px;
   
 }
 
+
+
 #merch10{
   text-align: center;
 padding-top: 10px;
@@ -483,8 +513,13 @@ border-image: url(images/purp.png) 30 round;
 
 
 #special5 {
+<<<<<<< HEAD
+Width: 504px;
+height: 493px;
+=======
 Width: 490px;
 height: 500px;
+>>>>>>> 8c69c34504fe1c7a6c653b584146357c7165cabf
 border:   5px groove;
 
 border-image: url(images/purp.png) 30 round;
@@ -492,3 +527,4 @@ border-image: url(images/purp.png) 30 round;
 
 
 }
+
